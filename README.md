@@ -4,7 +4,8 @@
 
 - Works **standalone**: you can use `AgentRuntime` + `callTool` without any LLM framework.
 - Works **with Vercel AI SDK**: wrap AI SDK tool `execute()` functions so every tool call gets timeouts, retries, backpressure, circuit breakers, and structured telemetry.
-- Default integration mode: **throw on tool failure**, with **typed failures in telemetry** (you asked for this).
+- Default integration mode: **throw on tool failure**, with **typed failures in telemetry**.
+- Inspired by reading Jeff Hodges' [Notes on Distributed Systems for Youngbloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/) 
 
 ## Packages
 
