@@ -1,0 +1,12 @@
+{
+  "name": "standalone-basic",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "agentdist": "0.1.0"
+  }
+}

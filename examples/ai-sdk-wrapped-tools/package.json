@@ -1,0 +1,14 @@
+{
+  "name": "ai-sdk-wrapped-tools",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "agentdist": "0.1.0",
+    "@agentdist/adapter-ai-sdk": "0.1.0"
+  },
+  "devDependencies": {}
+}

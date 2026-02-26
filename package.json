@@ -1,0 +1,24 @@
+{
+  "name": "agentdist",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Dustin Kimmel",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm -w agentdist run build && npm -w @agentdist/adapter-ai-sdk run build && npm -w standalone-basic run build && npm -w ai-sdk-wrapped-tools run build",
+    "example:standalone": "node examples/standalone-basic/dist/index.js",
+    "example:ai-sdk": "node examples/ai-sdk-wrapped-tools/dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^2.1.9",
+    "@types/node": "^20.11.30"
+  }
+}
